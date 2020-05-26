@@ -1,6 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <title>Amo</title>
+  <title>Posts</title>
+    <style>
+        * {color:gray;}
+        .newsTitle1{font: Calibri 1.5vh bold; color:blue;}
+        .newsBody1{font: "Calibri" 0.8 normal}
+
+        .newsTitle2{font: Calibri 1.5vh bold; color:red;}
+        .newsBody2{font: "Calibri" 0.8 normal;}
+
+        .newsTitle3{font: Calibri 1.5vh bold; color:green;}
+        .newsBody3{font: "Calibri" 0.8 normal}
+
+    </style>
+    <link rel="preconnect" href="https://api.jsonbin.io">
+    <link rel="preload" as="script" href="moduleNews.js" crossorigin="anonymous">
+<script src="main.js" type="module"></script>
+
+<script>
+    // const postUrl = "https://api.jsonbin.io/b/5ec09de8a47fdd6af1648176/latest";   
+
+    // fetch(postUrl)
+    // .then(response => response.json())
+    // .then(
+    //     function(data){
+    //         let returnHTML="";
+    //         data.news.forEach(element => {
+
+    //             returnHTML += '\
+    //             <article> \
+    //             <h3 class="newsTitle">' + element.title + '</h3>\
+    //             <p class="newsBody">' + element.body + '</p>\
+    //             </article>'
+    //         });
+    //         document.getElementById("posts").innerHTML = returnHTML;
+    //     }
+    //     )
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -79,8 +116,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   </div>
 </div>
 
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+<div id="posts">
     <h1 class="w3-margin w3-xlarge">Эрдэмтэй хүн даруу</h1>
+  
+
+  
 </div>
 
 <!-- Footer -->
