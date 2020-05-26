@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts</title>
+    <style>
+        * {color:gray;}
+        .newsTitle1{font: Calibri 1.5vh bold; color:blue;}
+        .newsBody1{font: "Calibri" 0.8 normal}
+
+        .newsTitle2{font: Calibri 1.5vh bold; color:red;}
+        .newsBody2{font: "Calibri" 0.8 normal;}
+
+        .newsTitle3{font: Calibri 1.5vh bold; color:green;}
+        .newsBody3{font: "Calibri" 0.8 normal}
+
+    </style>
+    <link rel="preconnect" href="https://api.jsonbin.io">
+    <link rel="preload" as="script" href="moduleNews.js" crossorigin="anonymous">
+<script src="main.js" type="module"></script>
+
+<script>
+    // const postUrl = "https://api.jsonbin.io/b/5ec09de8a47fdd6af1648176/latest";   
+
+    // fetch(postUrl)
+    // .then(response => response.json())
+    // .then(
+    //     function(data){
+    //         let returnHTML="";
+    //         data.news.forEach(element => {
+
+    //             returnHTML += '\
+    //             <article> \
+    //             <h3 class="newsTitle">' + element.title + '</h3>\
+    //             <p class="newsBody">' + element.body + '</p>\
+    //             </article>'
+    //         });
+    //         document.getElementById("posts").innerHTML = returnHTML;
+    //     }
+    //     )
+</script>
+</head>
+<body>
+<h1>Posts</h1>
+<section id="posts">
+
+</section>
+</body>
+</html>
